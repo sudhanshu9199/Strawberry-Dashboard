@@ -1,0 +1,190 @@
+.mascot-welcome {
+  background: linear-gradient(135deg, #fff0f2 0%, #ffe4e8 100%);
+  border: 4px solid var(--strawberry-red-light);
+  border-radius: 32px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 45px;
+  box-shadow: 0 16px 36px rgba(255, 59, 92, 0.06);
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 968px) {
+    grid-template-columns: 1fr;
+    padding: 30px;
+    gap: 30px;
+  }
+
+  /* Cute background bubbles/shapes */
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: rgba(76, 175, 80, 0.12);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .welcome-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 2;
+
+    .welcome-badge {
+      align-self: flex-start;
+      background: var(--strawberry-red);
+      color: white;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 6px 16px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(255, 59, 92, 0.2);
+    }
+
+    .welcome-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--strawberry-red-dark);
+      line-height: 1.25;
+      
+      @media (max-width: 576px) {
+        font-size: 2rem;
+      }
+    }
+
+    .welcome-subtitle {
+      font-size: 1.05rem;
+      color: #4f4f4f;
+      line-height: 1.6;
+    }
+
+    .welcome-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 10px;
+
+      .feature-item {
+        background: white;
+        border: 2px solid #ffe4e8;
+        border-radius: 16px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: 600;
+        font-size: 0.85rem;
+        box-shadow: 0 4px 8px rgba(255, 59, 92, 0.02);
+        color: var(--charcoal);
+
+        .feature-icon {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+
+    .tablet-frame {
+      background: #2b2b2b;
+      border-radius: 28px;
+      padding: 16px 12px;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+      position: relative;
+      width: 100%;
+      max-width: 290px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 4px solid #3c3c3c;
+
+      .tablet-camera {
+        width: 8px;
+        height: 8px;
+        background: #111;
+        border-radius: 50%;
+        margin-bottom: 12px;
+      }
+
+      .mascot-video {
+        width: 100%;
+        border-radius: 16px;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        background: #000;
+        box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+      }
+
+      .tablet-home {
+        width: 16px;
+        height: 16px;
+        border: 2px solid #555;
+        border-radius: 50%;
+        margin-top: 10px;
+      }
+    }
+
+    .video-decorations {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+
+      .decor-leaf {
+        position: absolute;
+        font-size: 1.6rem;
+        animation: floatLeaf 3s ease-in-out infinite alternate;
+
+        &.leaf-1 {
+          top: -25px;
+          left: 10px;
+          transform: rotate(-15deg);
+        }
+
+        &.leaf-2 {
+          bottom: -15px;
+          right: 15px;
+          transform: rotate(45deg);
+          animation-delay: 1.5s;
+        }
+      }
+
+      .decor-strawberry {
+        position: absolute;
+        font-size: 2.2rem;
+        animation: floatStrawberry 4s ease-in-out infinite alternate;
+
+        &.strawberry-1 {
+          bottom: 15px;
+          left: -35px;
+          transform: rotate(20deg);
+        }
+      }
+    }
+  }
+}
+
+@keyframes floatLeaf {
+  0% { transform: translateY(0) rotate(-15deg); }
+  100% { transform: translateY(-8px) rotate(-5deg); }
+}
+
+@keyframes floatStrawberry {
+  0% { transform: translateY(0) rotate(20deg); }
+  100% { transform: translateY(-10px) rotate(10deg); }
+}

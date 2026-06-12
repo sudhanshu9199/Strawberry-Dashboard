@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+$strawberry-red: #ff3b5c;
+$strawberry-red-dark: #d82343;
+$strawberry-red-light: #ff607d;
+$leaf-green: #4caf50;
+$leaf-green-dark: #388e3c;
+$leaf-green-light: #81c784;
+$blossom-pink: #fff0f2;
+$cream-bg: #fdfcf7;
+$seed-yellow: #ffd034;
+$charcoal: #333333;
+$card-shadow: 0 12px 24px rgba(255, 59, 92, 0.08);
+$card-shadow-hover: 0 20px 32px rgba(255, 59, 92, 0.16);
+
+:root {
+  --strawberry-red: #{$strawberry-red};
+  --strawberry-red-dark: #{$strawberry-red-dark};
+  --strawberry-red-light: #{$strawberry-red-light};
+  --leaf-green: #{$leaf-green};
+  --leaf-green-dark: #{$leaf-green-dark};
+  --leaf-green-light: #{$leaf-green-light};
+  --blossom-pink: #{$blossom-pink};
+  --cream-bg: #{$cream-bg};
+  --seed-yellow: #{$seed-yellow};
+  --charcoal: #{$charcoal};
+  
+  font-family: 'Fredoka', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: var(--charcoal);
+  background-color: var(--cream-bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--cream-bg);
+  background-image: 
+    radial-gradient(rgba(255, 59, 92, 0.06) 15%, transparent 15%),
+    radial-gradient(rgba(255, 59, 92, 0.06) 15%, transparent 15%);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--blossom-pink);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--strawberry-red-light);
+  border-radius: 5px;
+  border: 2px solid var(--blossom-pink);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--strawberry-red);
+}

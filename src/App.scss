@@ -1,0 +1,297 @@
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styling */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  margin-bottom: 30px;
+  gap: 20px;
+  border-bottom: 3px dashed #ffe4e8;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+
+    .logo-emoji {
+      font-size: 2.2rem;
+      display: inline-block;
+      animation: spinStrawberry 4s ease-in-out infinite alternate;
+    }
+
+    .logo-text {
+      color: var(--strawberry-red-dark);
+      letter-spacing: -0.5px;
+
+      .logo-highlight {
+        color: var(--leaf-green-dark);
+      }
+    }
+  }
+
+  .search-bar-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      font-size: 1.1rem;
+      color: #999;
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 12px 45px 12px 48px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      border: 3px solid #ffe4e8;
+      border-radius: 30px;
+      background: white;
+      outline: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(255, 59, 92, 0.02);
+
+      &:focus {
+        border-color: var(--strawberry-red);
+        box-shadow: 0 8px 16px rgba(255, 59, 92, 0.08);
+      }
+    }
+
+    .clear-search {
+      position: absolute;
+      right: 16px;
+      color: #999;
+      font-size: 0.9rem;
+      font-weight: bold;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      
+      &:hover {
+        color: var(--strawberry-red);
+      }
+    }
+  }
+}
+
+/* Controls section / Filters */
+.controls-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 35px;
+  background: white;
+  padding: 15px 25px;
+  border-radius: 20px;
+  border: 3px solid #ffe4e8;
+  box-shadow: 0 8px 20px rgba(255, 59, 92, 0.02);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-label {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--charcoal);
+  }
+
+  .filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .filter-btn {
+      padding: 8px 18px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border-radius: 30px;
+      border: 2px solid #ffe4e8;
+      background: white;
+      color: var(--charcoal);
+      transition: all 0.25s ease;
+      cursor: pointer;
+
+      &:hover {
+        border-color: var(--strawberry-red-light);
+        background: var(--blossom-pink);
+        color: var(--strawberry-red-dark);
+      }
+
+      &.active {
+        background: var(--strawberry-red);
+        border-color: var(--strawberry-red);
+        color: white;
+        box-shadow: 0 4px 12px rgba(255, 59, 92, 0.25);
+      }
+    }
+  }
+}
+
+/* Projects grid and list */
+.projects-section {
+  flex-grow: 1;
+
+  .section-header {
+    margin-bottom: 25px;
+
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--charcoal);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .count-badge {
+        font-size: 0.9rem;
+        background: var(--blossom-pink);
+        color: var(--strawberry-red);
+        border: 2px solid var(--strawberry-red-light);
+        padding: 2px 12px;
+        border-radius: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+/* Empty State / No Results */
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 24px;
+  border: 3px dashed #ffe4e8;
+  margin-bottom: 50px;
+
+  .no-results-emoji {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    color: var(--charcoal);
+    margin-bottom: 8px;
+  }
+
+  p {
+    color: #666;
+    margin-bottom: 24px;
+  }
+
+  .reset-filters-btn {
+    padding: 10px 24px;
+    background: var(--leaf-green);
+    color: white;
+    font-weight: 600;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.25);
+    transition: all 0.25s ease;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--leaf-green-dark);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+/* Portal Footer */
+.portal-footer {
+  margin-top: auto;
+  border-top: 3px dashed #ffe4e8;
+  padding: 30px 0 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  .footer-content {
+    p {
+      color: #777;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    
+    .footer-sub {
+      font-size: 0.8rem;
+      color: #999;
+      margin-top: 4px;
+    }
+  }
+
+  .footer-decorations {
+    display: flex;
+    gap: 12px;
+    font-size: 1.2rem;
+
+    .leaf-decor {
+      display: inline-block;
+      animation: floatLeafSmall 2s ease-in-out infinite alternate;
+      &:nth-child(3) {
+        animation-delay: 1s;
+      }
+    }
+    
+    .strawberry-decor {
+      display: inline-block;
+      animation: floatStrawberrySmall 2.5s ease-in-out infinite alternate;
+    }
+  }
+}
+
+@keyframes spinStrawberry {
+  0% { transform: rotate(-8deg) scale(1); }
+  100% { transform: rotate(8deg) scale(1.05); }
+}
+
+@keyframes floatLeafSmall {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-4px); }
+}
+
+@keyframes floatStrawberrySmall {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-5px) scale(1.05); }
+}

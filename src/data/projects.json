@@ -1,0 +1,69 @@
+[
+  {
+    "id": "detective",
+    "title": "Be an Internet Detective!",
+    "description": "Solve puzzles and drag rules to learn about internet safety and etiquette. Protect your digital footprint!",
+    "grade": 3,
+    "chapter": 4,
+    "url": "https://surd-by-sudhanshu.netlify.app/",
+    "localUrl": "/class3_B4/index.html",
+    "image": "/images/detective_preview.png",
+    "tags": ["Internet Safety", "Interactive", "Drag & Drop"],
+    "isReal": true
+  },
+  {
+    "id": "math_orchard",
+    "title": "Strawberry Math Orchard",
+    "description": "Harvest delicious strawberries by solving additions, subtractions, and cool math puzzles in the orchard!",
+    "grade": 2,
+    "chapter": 1,
+    "url": "#",
+    "image": "/images/math_orchard.png",
+    "tags": ["Math", "Arithmetic", "Puzzles"],
+    "isReal": false
+  },
+  {
+    "id": "space_rover",
+    "title": "Space Rover Coding",
+    "description": "Help the strawberry rover navigate Mars! Learn block-based coding, logic loops, and sequential directions.",
+    "grade": 3,
+    "chapter": 2,
+    "url": "#",
+    "image": "/images/space_rover.png",
+    "tags": ["Coding", "Logic", "Space"],
+    "isReal": false
+  },
+  {
+    "id": "story_builder",
+    "title": "Strawberry Story Builder",
+    "description": "Become an author! Create interactive stories with strawberry characters, making your own choices along the way.",
+    "grade": 4,
+    "chapter": 3,
+    "url": "#",
+    "image": "/images/story_builder.png",
+    "tags": ["English", "Creativity", "Writing"],
+    "isReal": false
+  },
+  {
+    "id": "spelling_bee",
+    "title": "Strawberry Seed Spelling",
+    "description": "Help the busy honey bees collect pollen by spelling grade-level words. Grow your vocabulary!",
+    "grade": 1,
+    "chapter": 5,
+    "url": "#",
+    "image": "/images/spelling_bee.png",
+    "tags": ["Language", "Spelling", "Vocabulary"],
+    "isReal": false
+  },
+  {
+    "id": "paint_mascot",
+    "title": "Paint Your Strawberry Mascot",
+    "description": "Express your creativity! Design, color, and customize your own cute strawberry mascot character.",
+    "grade": 4,
+    "chapter": 6,
+    "url": "#",
+    "image": "/images/paint_mascot.png",
+    "tags": ["Art", "Drawing", "Creativity"],
+    "isReal": false
+  }
+]
