@@ -1,5 +1,38 @@
 [
   {
+    "id": "loop_a_loop",
+    "title": "Loop a Loop - Learn Repetition & Patterns",
+    "description": "Welcome to Loop-O-Land! Learn all about repetitions, patterns, and coding loops in this fun, interactive Repeat Adventure.",
+    "grade": 2,
+    "chapter": 5,
+    "url": "https://g2b5-loop-a-loop-by-sudhanshu.netlify.app/",
+    "image": "/images/loop_a_loop.png",
+    "tags": ["Computer Science", "Loops", "Repetition", "Interactive"],
+    "isReal": true
+  },
+  {
+    "id": "pizza_algorithms",
+    "title": "Understand Algorithm & Sequence with Pizza Making Steps",
+    "description": "Join Chef Algo's Pizza Academy! Drag and order the pizza making steps in the correct sequence to learn how algorithms work.",
+    "grade": 5,
+    "chapter": 4,
+    "url": "https://g5b4-algorithm-sequence-by-sudhanshu.netlify.app/",
+    "image": "/images/pizza_algorithms.png",
+    "tags": ["Computer Science", "Algorithms", "Sequencing", "Interactive"],
+    "isReal": true
+  },
+  {
+    "id": "sequence_magic",
+    "title": "Sequence Magic",
+    "description": "Help the strawberry wizard cast magical spells by finding the correct sequence of steps and patterns! Learn logical and algorithmic thinking.",
+    "grade": 2,
+    "chapter": 4,
+    "url": "https://g2b4-sequence-magic-by-sudhanshu.netlify.app/",
+    "image": "/images/sequence_magic.png",
+    "tags": ["Computer Science", "Logic", "Patterns", "Interactive"],
+    "isReal": true
+  },
+  {
     "id": "detective",
     "title": "Be an Internet Detective!",
     "description": "Solve puzzles and drag rules to learn about internet safety and etiquette. Protect your digital footprint!",
