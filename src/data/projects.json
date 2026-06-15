@@ -1,5 +1,16 @@
 [
   {
+    "id": "magic_loops_events",
+    "title": "Magic of Loop & Event",
+    "description": "Help LoopBot learn how to move, react, and dance! Assemble code blocks to explore triggers, events, and programming loops.",
+    "grade": 6,
+    "chapter": 4,
+    "url": "https://g6b4-loop-by-sudhanshu.netlify.app/",
+    "image": "/images/magic_loops_events.png",
+    "tags": ["Computer Science", "Loops", "Events", "Interactive"],
+    "isReal": true
+  },
+  {
     "id": "loop_a_loop",
     "title": "Loop a Loop - Learn Repetition & Patterns",
     "description": "Welcome to Loop-O-Land! Learn all about repetitions, patterns, and coding loops in this fun, interactive Repeat Adventure.",
