@@ -1,5 +1,16 @@
 [
   {
+    "id": "make_code_think",
+    "title": "Make Your Code Think!",
+    "description": "Teach your programs how to make decisions! Explore loops, conditions, variables, and events using fun roller coaster and supermarket metaphors.",
+    "grade": 6,
+    "chapter": 5,
+    "url": "https://g6b5-make-code-think-by-sudhanshu.netlify.app/",
+    "image": "/images/make_code_think.png",
+    "tags": ["Computer Science", "Conditions", "Variables", "Loops", "Interactive"],
+    "isReal": true
+  },
+  {
     "id": "magic_loops_events",
     "title": "Magic of Loop & Event",
     "description": "Help LoopBot learn how to move, react, and dance! Assemble code blocks to explore triggers, events, and programming loops.",
