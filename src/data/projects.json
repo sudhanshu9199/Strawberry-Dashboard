@@ -1,5 +1,16 @@
 [
   {
+    "id": "algorithms_in_action",
+    "title": "Algorithms in Action",
+    "description": "Welcome to AlgoPlay! Step into the shoes of a programmer and see algorithms in action through fun interactive puzzles and coding flows.",
+    "grade": 5,
+    "chapter": 5,
+    "url": "https://g5b5-algorithm-in-action-by-sudhanshu.netlify.app/",
+    "image": "/images/algorithms_in_action.png",
+    "tags": ["Computer Science", "Algorithms", "Logic", "Interactive"],
+    "isReal": true
+  },
+  {
     "id": "make_code_think",
     "title": "Make Your Code Think!",
     "description": "Teach your programs how to make decisions! Explore loops, conditions, variables, and events using fun roller coaster and supermarket metaphors.",
