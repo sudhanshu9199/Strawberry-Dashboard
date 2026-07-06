@@ -1,5 +1,16 @@
 [
   {
+    "id": "algorithms_adventure",
+    "title": "Algorithms Adventure",
+    "description": "Embark on an exciting quest through the world of coding! Help your strawberry character complete level challenges by designing step-by-step algorithms.",
+    "grade": 4,
+    "chapter": 5,
+    "url": "https://g4b5algorithm-adventures-by-sudhanshu.netlify.app/",
+    "image": "/images/algorithms_adventure.png",
+    "tags": ["Computer Science", "Algorithms", "Coding", "Interactive"],
+    "isReal": true
+  },
+  {
     "id": "algorithms_in_action",
     "title": "Algorithms in Action",
     "description": "Welcome to AlgoPlay! Step into the shoes of a programmer and see algorithms in action through fun interactive puzzles and coding flows.",
