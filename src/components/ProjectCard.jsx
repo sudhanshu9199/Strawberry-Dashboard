@@ -11,13 +11,14 @@ export default function ProjectCard({ project }) {
   };
 
   return (
-    <div className={`project-card ${project.isReal ? 'real-project' : 'demo-project'}`} onClick={handleClick}>
+    <div className={`project-card ${project.isReal ? 'real-project' : 'demo-project'} ${project.isNew ? 'new-project' : ''}`} onClick={handleClick}>
       <div className="card-image-container">
-        <img src={project.image} alt={project.title} className="card-image" />
+        <img src={project.image} alt={project.title} className="card-image" loading="lazy" />
         <div className="card-badge-overlay">
           <span className="badge-grade">Grade {project.grade}</span>
           <span className="badge-chapter">Chapter {project.chapter}</span>
         </div>
+        {project.isNew && <div className="new-tag">✨ 2026 New</div>}
         {!project.isReal && <div className="demo-tag">Coming Soon 🍓</div>}
       </div>
       

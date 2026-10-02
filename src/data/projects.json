@@ -1,5 +1,29 @@
 [
   {
+    "id": "how_computers_work",
+    "title": "How Computers & The Internet Work",
+    "description": "Explore the digital superhighway! Discover how computers connect across the globe using the Postal System analogy, IP Addresses, DNS Phonebook, Smart Traffic Routers, and Web Server Libraries with interactive simulations.",
+    "grade": 6,
+    "chapter": 13,
+    "url": "https://g6b13-how-computer-works-by-sudhanshu.netlify.app/",
+    "image": "/images/how_internet_works.png",
+    "tags": ["Computer Science", "Networks", "DNS & IP", "Routers & Servers", "Interactive"],
+    "isReal": true,
+    "isNew": true
+  },
+  {
+    "id": "trigger_time_events",
+    "title": "Trigger Time: Events & Actions",
+    "description": "Step into the Strawberry Learning Lab! Discover how real-world signals, traffic lights, and school bells turn into Scratch coding events, keyboard triggers, and lively dancing sprite actions.",
+    "grade": 3,
+    "chapter": 11,
+    "url": "https://g3b11-trigger-event-by-sudhanshu.netlify.app/",
+    "image": "/images/trigger_time_events.png",
+    "tags": ["Computer Science", "Events & Triggers", "Scratch Coding", "Interactive Lab"],
+    "isReal": true,
+    "isNew": true
+  },
+  {
     "id": "algorithms_adventure",
     "title": "Algorithms Adventure",
     "description": "Embark on an exciting quest through the world of coding! Help your strawberry character complete level challenges by designing step-by-step algorithms.",
